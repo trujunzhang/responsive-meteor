@@ -1,0 +1,255 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+
+    <title>{{siteName}}</title>
+    <style type="text/css">
+        /* Resets: see reset.css for details */
+
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #ebebeb;
+        }
+
+        .ExternalClass {
+            width: 100%;
+            background-color: #ebebeb;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        body {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        /* Constrain email width for small screens */
+
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 95% !important;
+            }
+
+            .main-container {
+                font-size: 14px !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+
+        @media screen and (max-width: 480px) {
+            td[class="container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+
+        a {
+            /*font-weight: bold;*/
+            text-decoration: underline;
+        }
+
+        .wrapper {
+            padding: 20px 0;
+        }
+
+        .container {
+            border-radius: 3px;
+        }
+
+        .mail_content_section {
+            box-sizing: border-box;
+            color: #545454;
+            display: block;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.7;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 20px;
+            padding-bottom: 0;
+        }
+
+        .mailMainArea {
+            font-size: 14px;
+            background: #ccc;
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mail_table {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            color: #333332;
+            line-height: 1.4;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Ubuntu', 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: #ffffff;
+        }
+
+        .main_table_padding_bottom20 {
+            padding-bottom: 20px;
+        }
+
+        img.logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        .mail-footer {
+            padding-top: 15px;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            margin-top: 50px;
+            color: #b3b3b1;
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .link {
+            color: #8e8e8e;
+            text-decoration: underline;
+        }
+
+        .user-account-section {
+            box-sizing: border-box;
+            color: #545454;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 0 auto;
+            padding: 20px 20px;
+            vertical-align: top
+        }
+
+    </style>
+</head>
+
+<body style="margin:0; padding:10px 0;"
+      bgcolor="#ccc"
+      marginwidth="0"
+      marginheight="0">
+
+<br/>
+
+<div class="mail_content_section">
+    <!-- 100% wrapper (grey background) -->
+    <div class="mailMainArea">
+
+        <table class="mail_table">
+            <tbody>
+            <tr>
+                <td>
+                    <img src="{{logoUrl}}"
+                         width="{{logoWidth}}"
+                         height="{{logoHeight}}"
+                         alt="{{logoUrl}}"
+                         class="logo">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="mail_table main_table_padding_bottom20">
+
+            <tbody>
+            <tr>
+                <td>
+
+                    <div class="user-account-section">
+                        {{{body}}}
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="mail-footer">
+                        Sent by
+                        <a target="_blank"
+                           href="http://politicl.com"
+                           class="link">
+                            Politicl
+                        </a>
+                        Follow us on
+                        <a target="_blank"
+                           href="https://www.facebook.com/getpoliticl"
+                           class="link">
+                            Facebook
+                        </a>
+                        or
+                        <a target="_blank"
+                           href="https://twitter.com/getpoliticl"
+                           class="link">
+                            Twitter
+                        </a>
+                        <div>
+
+                            <a target="_blank"
+                               href="http://politicl.com/privacy"
+                               class="link">
+                                Privacy Policy
+                            </a>
+                            &
+                            <a target="_blank"
+                               href="http://politicl.com/terms"
+                               class="link">
+                                Terms of Service
+                            </a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+    <!--/100% wrapper-->
+</div>
+
+<br>
+<br>
+</body>
+
+</html>

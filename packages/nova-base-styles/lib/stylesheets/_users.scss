@@ -1,0 +1,194 @@
+
+.account_FReak {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+@media(max-width: 768px) {
+  .addPostButton_2U4Gx {
+    display: none
+  }
+}
+
+
+.login_258vb, .userMenu_3flqi {
+  display: block;
+  padding: 3px 0 3px 6px
+}
+
+.user-image-as-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block
+}
+
+.user-image {
+  display: inline-block;
+  position: relative
+}
+
+.user-image--image {
+  border-radius: 50%
+}
+
+.user-image--badge {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  height: 15px;
+  left: -4px;
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  top: -4px;
+  width: 15px
+}
+
+.user-image--badge.v-maker {
+  background: #00b27f
+}
+
+.user-image--badge.v-hunter {
+  background: black
+}
+
+.user-image.v-big .user-image--badge {
+  font-size: 19px;
+  font-weight: 600;
+  height: 30px;
+  left: 0;
+  line-height: 31px;
+  top: 0;
+  width: 30px
+}
+
+.user-image--comment-bubble {
+  position: absolute;
+  right: -4px;
+  top: -4px
+}
+
+.ama-event-detail--realtime-updates .heading .user-image {
+  margin-right: 10px
+}
+
+.user_avator {
+  height: 32px;
+  width: 32px;
+}
+
+// User Edit
+.user-edit-margin-bottom {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+// invite
+#user_invite_someone {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+}
+
+.header_2cWfu {
+  background: #fcf5e2;
+  padding: 30px
+}
+
+.title_3pWZT {
+  color: #000;
+  display: block;
+  text-align: center
+}
+
+.description_HGb5o {
+  color: #857972;
+  display: block;
+  text-align: center
+}
+
+.content_3YO6a {
+  padding: 20px
+}
+
+.success_1VZzp {
+  background: #00b27f;
+  border-radius: 3px;
+  padding: 20px;
+  color: #c7e7d7;
+  margin-bottom: 20px
+}
+
+
+.success_1VZzp a {
+  color: inherit
+}
+
+.successText_3Qhuc {
+  margin-bottom: 10px
+}
+
+.successTweet_emWly {
+  text-transform: none;
+  background: #007c58;
+  border-color: #007c58;
+  color: #fff!important
+}
+
+.successTweet_emWly:hover {
+  border-color: #005940;
+  background: #007c58
+}
+
+.successTweet_emWly svg {
+  margin-right: 6px;
+  position: relative;
+  top: 1px
+}
+
+.successTweet_emWly path {
+  fill: #fff
+}
+
+
+.input_pBYVu {
+  background: #fff;
+  border-radius: 3px;
+  border: none;
+  box-shadow: inset 0 1px 2px 0 rgba(0,0,0,.11),inset 0 0 0 1px rgba(0,0,0,.13);
+  box-sizing: border-box;
+  height: 34px;
+  margin: 10px 0;
+  padding: 7px 12px;
+  width: 100%;
+  clear: both
+}
+
+.successInput_2sbDs {
+  background: rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 1px 0 #2c6f4d,inset 0 0 0 1px rgba(41,105,72,.28);
+  color: inherit
+}
+
+.error_10iQC {
+  background: #da552f;
+  border-radius: 3px;
+  color: #f4ccbe;
+  margin-bottom: 20px;
+  padding: 20px
+}
+
+.invitesForm_1Npul {
+  margin-bottom: 30px
+}
+
+.invitesLeft_2K4ES {
+  float: right
+}
+

@@ -1,0 +1,70 @@
+// for mobile apps widget
+img.mobile_app {
+  height: auto;
+  display: block;
+  max-width: 100% !important;
+}
+
+// for facebook and twitter followers
+
+.app_followers .fa-3 {
+  color: #fff;
+  font-size: 40px;
+  background-color: #55acee;
+}
+
+.app_followers {
+  height: 48px;
+  a {
+    border-radius: 12px;
+
+    svg {
+      width: 40px;
+      height: 30px;
+      align-items: center;
+      padding: 4px;
+      margin-top: 8px;
+    }
+  }
+  a.widget-twitter {
+    background-color: #55acee;
+  }
+  a.widget-facebook {
+    background-color: #3a5795;
+  }
+}
+
+/* @group social buttons */
+
+.sfmsb-follow-social-buttons a,
+.sfmsb-follow-social-buttons .sfmsb-text {
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.sfmsb-follow-social-buttons.sfmsb-vertical a {
+  float: none;
+}
+
+.sfmsb-follow-social-buttons.sfmsb-under .sfmsb-text {
+  float: none;
+}
+
+.sfmsb-follow-social-buttons.sfmsb-float .sfmsb-text,
+.sfmsb-follow-social-buttons.sfmsb-float a {
+
+  padding: 0 5px 0 5px;
+  margin-right: 0;
+}
+
+.sfmsb-follow-social-buttons.sfmsb-under a {
+  margin-right: 10px;
+}
+
+.sfmsb-follow-social-buttons a,
+.sfmsb-follow-social-buttons a:hover {
+  text-decoration: none !important;
+}
+
+/* @end */

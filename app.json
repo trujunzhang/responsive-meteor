@@ -1,0 +1,16 @@
+{
+  "name": "mytelescopenews",
+  "description": "An open-source community app built with React & Meteor",
+  "repository": "https://github.com/trujunzhang/mypoliticlnews",
+  "logo": "http://www.telescopeapp.org/images/logo.png",
+  "keywords": ["meteor", "social", "community"],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/AdmitHub/meteor-buildpack-horse.git",
+    "ROOT_URL": {
+      "description": "The full URL of your Nova app (by default, http://mypoliticlnews.herokuapp.com)."
+    }
+  },
+  "addons": [
+    "mongolab"
+  ]
+}

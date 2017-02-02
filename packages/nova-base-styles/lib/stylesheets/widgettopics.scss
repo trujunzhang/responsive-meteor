@@ -1,0 +1,426 @@
+
+.sidebar-heading {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.sidebar-categories .category-menu-item {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.sidebar-categories .categories-list {
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 145px;
+  overflow-y: scroll;
+}
+
+.sidebar-categories .categories-list:after {
+  transition: opacity 700ms ease-in;
+  opacity: 1;
+  content: " ";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 649px) {
+  .sidebar-categories .categories-list:after {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, white 100%);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .sidebar-categories .categories-list:after {
+    background: linear-gradient(to bottom, rgba(243, 243, 243, 0) 0%, rgba(243, 243, 243, 0) 40%, #f3f3f3 100%);
+  }
+}
+
+.sidebar-categories .posts-category {
+  border: 1px solid #D9C8C1;
+  margin: 0;
+}
+
+.sidebar-categories .posts-category:hover {
+  border-color: #0a9fda;
+}
+
+.sidebar-categories .posts-category-active {
+  background: #0a9fda;
+  color: #fff;
+  border-color: #0a9fda;
+  text-decoration: none;
+}
+
+.posts-category {
+  background: #F6F2EF;
+  color: #AF9D95;
+  border: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  border-radius: .25rem;
+  margin-right: 5px;
+  padding: 2px 6px;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+.posts-category:hover {
+  background: #0a9fda;
+  color: #fff;
+  border-color: #0a9fda;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 999px) {
+  .posts-list .posts-category {
+    margin-bottom: 5px;
+  }
+}
+
+// medium tags style
+
+.tags--postTags .tags-input {
+  min-width: 100px
+}
+
+.tags--postTags > .tag-token:nth-child(5) + .tags-input {
+  min-width: 10px
+}
+
+.tags--postTags > .tag-token:nth-child(5) + .tags-input .defaultValue {
+  visibility: hidden;
+  display: inline-block;
+  width: 0
+}
+
+.tags--uppercase {
+  text-transform: uppercase
+}
+
+.tags--dark .tag-button, .tags--dark > a {
+  color: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .05)
+}
+
+.tags--dark .tags-input {
+  background: rgba(0, 0, 0, .05)
+}
+
+.tags--dark .tags-input.editable, .tags--dark .tags-input.editable .defaultValue, .tags--dark .tags-input.editable a {
+  color: rgba(0, 0, 0, .44)
+}
+
+.tags--darker .tags-input.editable .defaultValue {
+  color: rgba(0, 0, 0, .8)
+}
+
+.tags--postTags .tag-token, .tags--postTags > .button, .tags--postTags > a {
+  margin-right: 8px;
+  margin-bottom: 8px
+}
+
+.tags--postTags .tag-button, .tags--postTags > .button, .tags--postTags > a {
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, .44);
+  font-size: 14px;
+  letter-spacing: 0;
+  text-decoration: none;
+  background: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #f0f0f0;
+  padding: 5px 10px
+}
+
+.tags--postTags .tag-token:last-child, .tags--postTags > a:last-child {
+  margin-right: 0
+}
+
+.tags--postTags.tags--light .tag-button, .tags--postTags.tags--light > a {
+  color: rgba(0, 0, 0, .6);
+  background: rgba(255, 255, 255, .97)
+}
+
+body.is-withMagicUnderlines .tags a.markup--anchor {
+  background-image: none
+}
+
+.tags--postTags .tag-button.is-active, .tags--postTags .tag-button:focus, .tags--postTags .tag-button:hover, .tags--postTags > .button.is-active, .tags--postTags > .button:focus, .tags--postTags > .button:hover, .tags--postTags > a:focus, .tags--postTags > a:hover {
+  color: rgba(0, 0, 0, .8);
+  border-color: rgba(0, 0, 0, .15);
+  background: #fff;
+  text-decoration: none
+}
+
+.tags--postTagsEditor .tag-button, .tags--postTagsEditor > .button, .tags--postTagsEditor > a {
+  transition: none
+}
+
+.tags--postTagsEditor .tag-button:hover, .tags--postTagsEditor > .button:hover, .tags--postTagsEditor > a:hover {
+  background: #fafafa;
+  color: rgba(0, 0, 0, .44);
+  border-color: rgba(0, 0, 0, .44)
+}
+
+.tags--postTagsEditor .tag-button:focus, .tags--postTagsEditor > .button:focus, .tags--postTagsEditor > a:focus {
+  background: #fafafa;
+  color: rgba(0, 0, 0, .44);
+  border-color: rgba(2, 184, 117, .8)
+}
+
+.tags--postTags .tags-input {
+  padding: 10px 0
+}
+
+.tags--postTags .tags-input.editable, .tags--postTags .tags-input.editable a {
+  color: rgba(0, 0, 0, .8)
+}
+
+.tags--postTags .tags-input.editable .defaultValue {
+  color: rgba(0, 0, 0, .44)
+}
+
+.tags--postTags .tags-input.editable .graf--p {
+  margin-bottom: 0
+}
+
+.inlineEditor .tags--postTagsEditor {
+  margin: 0
+}
+
+.inlineEditor .tags--postTags .tags-input {
+  padding: 9px 0
+}
+
+.inlineEditor .tags--postTags > a {
+  margin-bottom: 0
+}
+
+.inlineEditor .tags--postTagsEditor {
+  margin-top: 2px;
+  margin-bottom: 8px
+}
+
+.tagEditor {
+  min-height: 37px
+}
+
+.tags--inlineBlock {
+  text-align: left;
+  height: 31px;
+  position: relative;
+  top: -1px
+}
+
+.tags--borderless .tag-button, .tags--borderless > .button, .tags--borderless > a {
+  border: none;
+  color: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .05)
+}
+
+.tags--borderless .tag-button.is-active, .tags--borderless .tag-button:focus, .tags--borderless .tag-button:hover, .tags--borderless > .button.is-active, .tags--borderless > .button:focus, .tags--borderless > .button:hover, .tags--borderless > a:focus, .tags--borderless > a:hover {
+  background: rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, .6)
+}
+
+.tags--onboarding .tags-input {
+  font-size: 14px;
+  padding: 7px 15px;
+  margin: 0 auto 15px;
+  border-radius: 999em;
+  border: 1px solid #f0f0f0;
+  line-height: 1;
+  min-width: 180px
+}
+
+.tags--onboarding .tags-input.editable, .tags--onboarding .tags-input.editable a {
+  color: rgba(0, 0, 0, .8)
+}
+
+.tags--onboarding > .tags-token {
+  height: 100px;
+  border: 0;
+  padding: 2px;
+  background-color: #b3b3b1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-clip: content-box;
+  border-radius: 5px
+}
+
+@media screen and (min-width: 768px) {
+  .tags--onboarding > .tags-token {
+    width: 20% !important
+  }
+}
+
+.tags-token > .tags-button {
+  font-weight: 700;
+  font-style: normal;
+  color: rgba(255, 255, 255, .97);
+  font-size: 18px;
+  letter-spacing: 0;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  text-align: center
+}
+
+.tags-token > .tags-button {
+  border-radius: 3px;
+  font-size: 16px
+}
+
+.tags--onboarding > .tags-token.is-dynamic {
+  animation: fade-in 750ms;
+  animation-fill-mode: both
+}
+
+.tags-token > .tags-button:hover:not(.is-active) {
+  background-color: rgba(255, 255, 255, .1)
+}
+
+.tags-token > .tags-button.is-active {
+  background-color: rgba(2, 184, 117, .8)
+}
+
+.tags--onboarding > .button.is-active {
+  color: #fff;
+  border-color: #02b875;
+  background: #02b875
+}
+
+.tags--postTagsEditor .tag-token {
+  position: relative
+}
+
+.tags--postTagsEditor:not(.is-withoutCloseButton) .tag-button {
+  padding-right: 24px
+}
+
+.tags--fontSizeSmall.tags--dark:not(.is-withoutCloseButton) .tag-button {
+  padding-right: 32px
+}
+
+.tags--postTagsEditor .button--close {
+  margin: 1px;
+  padding: 10px 8px;
+  font-size: 16px;
+  line-height: 11px;
+  border-radius: 100%
+}
+
+.tags--postTagsEditor .button--close:active, .tags--postTagsEditor .button--close:focus, .tags--postTagsEditor .button--close:hover {
+  color: rgba(0, 0, 0, .8)
+}
+
+.tags--dark .button--close:hover {
+  color: #cc5454
+}
+
+.tags--navigation .tag-button {
+  cursor: inherit;
+  white-space: nowrap;
+  max-width: 236px;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.tags--navigation .tag-button:hover {
+  border-color: #f0f0f0
+}
+
+.tags--navigation .tag-token {
+  max-width: 250px
+}
+
+.tags--navigation .token-button {
+  background-color: rgba(255, 255, 255, .85)
+}
+
+.tags--navigation .token-button:after {
+  margin-left: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  content: 'story';
+  color: rgba(0, 0, 0, .44)
+}
+
+.tags--fontSizeSmall .button, .tags--fontSizeSmall .tags-input {
+  font-size: 16px;
+  padding: 7px 13px;
+  min-height: 22px;
+  margin-bottom: 0;
+  vertical-align: bottom
+}
+
+.tags--fontSizeSmall.tags--dark .tags-input {
+  margin-bottom: 5px
+}
+
+@media all and (max-width: 767px) {
+  .tags--postTags {
+    font-size: 12px
+  }
+}
+
+// panel
+
+.tags {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal
+}
+
+.tags .tag-token, .tags > a {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  position: relative
+}
+
+.tags .tag-button, .tags > a {
+  color: #fff;
+  background: rgba(255, 255, 255, .35);
+  //border-radius: 999em;
+  //padding: 0 9px;
+  line-height: 22px
+}
+
+.tags .tag-button:focus, .tags > a:focus {
+  background: #02b875;
+  outline: 0
+}
+
+.tags-input {
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 5px;
+  outline: 0;
+  background: rgba(255, 255, 255, .2);
+  //border-radius: 999em;
+  padding: 3px 9px;
+  margin-bottom: 5px;
+  cursor: text
+}
+
+.tags-input.editable, .tags-input.editable .defaultValue, .tags-input.editable a {
+  color: #fff
+}
+
+
+
+

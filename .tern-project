@@ -1,0 +1,13 @@
+{
+	"libs" : [
+		"browser",
+		"jquery"
+	],
+	"loadEagerly": [ "js/*.js", "*.js" ],
+	"plugins" : {
+		"commonjs" : {},
+		"node" : {},
+		"requirejs" : {},
+		"node_resolve" : {}
+	}
+}

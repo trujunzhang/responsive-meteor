@@ -1,0 +1,121 @@
+$calender_normal: #0a9fda;
+
+.calendar-header-container {
+  position: relative;
+
+  a {
+    color: $calender_normal;
+  }
+}
+
+// tbody
+
+.rc-calendar {
+  outline: none;
+}
+
+.rc-calendar .rc-calendar-table {
+  width: 100%;
+}
+
+.rc-calendar .rc-calendar-cell {
+  margin-bottom: 10px;
+}
+
+.rc-calendar .rc-calendar-last-month-cell,
+.rc-calendar .rc-calendar-next-month-btn-day {
+  opacity: 0.35;
+}
+
+.rc-calendar .rc-calendar-column-header {
+  text-align: center;
+}
+
+.rc-calendar-header {
+  margin-bottom: 10px;
+}
+
+.rc-calendar-header > div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.rc-calendar-header > div .rc-calendar-prev-year-btn,
+.rc-calendar-header > div .rc-calendar-prev-month-btn,
+.rc-calendar-header > div .rc-calendar-next-month-btn,
+.rc-calendar-header > div .rc-calendar-next-year-btn {
+  border-radius: .25rem;
+  border: 1px solid #D9C8C1;
+  padding: 2px 6px;
+  display: block;
+  text-align: center;
+  flex-basis: 30px;
+}
+
+.rc-calendar-header > div .rc-calendar-prev-year-btn:hover,
+.rc-calendar-header > div .rc-calendar-prev-month-btn:hover,
+.rc-calendar-header > div .rc-calendar-next-month-btn:hover,
+.rc-calendar-header > div .rc-calendar-next-year-btn:hover {
+  background: #0a9fda;
+  color: #fff;
+  border-color: #0a9fda;
+  text-decoration: none;
+}
+
+.rc-calendar-my-select {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.rc-calendar-header > div .rc-calendar-prev-year-btn {
+  margin-right: 5px;
+}
+
+.rc-calendar-header > div .rc-calendar-my-select {
+  flex-grow: 1;
+  pointer-events: none;
+  text-align: center;
+}
+
+.rc-calendar-header > div .rc-calendar-month-select {
+  //display: inline-block;
+  margin-right: 3px;
+}
+
+.rc-calendar-header > div .rc-calendar-year-select {
+  display: inline-block;
+}
+
+.rc-calendar-header > div .rc-calendar-next-year-btn {
+  margin-left: 5px;
+}
+
+.rc-calendar-date {
+  display: block;
+  text-align: center;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+.rc-calendar-date:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.rc-calendar-today .rc-calendar-date {
+  color: #0a9fda;
+  //padding-bottom: 6px;
+}
+
+.rc-calendar-selected-day .rc-calendar-date {
+  background: #0a9fda;
+  color: #fff;
+}
+
+.rc-calendar-disabled-cell {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.35;
+}

@@ -1,0 +1,129 @@
+
+.collections-popover--collections {
+  height: 160px;
+  width: 365px
+}
+
+.collections-popover--collection {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 47px 0 17px;
+  position: relative
+}
+
+.collections-popover--collection:hover .collections-popover--collection--icon {
+  display: inline
+}
+
+.collections-popover--collection--icon {
+  //display: none;
+  position: absolute;
+  right: 21px;
+  top: 2px
+}
+
+.collections-popover--collection--icon.v-collect {
+  width: 15px;
+  height: 15px;
+}
+
+.collections-popover--collection--icon.v-collect path {
+  fill: #bbbbbb
+}
+
+.collections-popover--collection--icon.v-collect:hover path {
+  fill: #1ca0d8
+}
+
+.collections-popover--collection--icon.v-collected {
+  display: inline;
+  width: 17px
+}
+
+.collections-popover--collection--icon.v-collected path {
+  fill: #1ca0d8
+}
+
+.collections-popover--form-trigger {
+  color: #bbbbbb;
+  display: block;
+  line-height: 50px;
+  padding: 0 0 0 17px;
+}
+
+.collections-input {
+  height: 34px;
+  width: 300px;
+}
+
+.collections-popover--form-trigger:hover {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+
+.collections-popover--form {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 8px 5px
+}
+
+.collections-popover--form--field {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 0 5px 0 0;
+  border: 1px solid #f2f2f2
+}
+
+.collections-popover--form--submit {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+#collection-popover-lock-icon:before {
+  margin-right: 4px;
+}
+
+.folder-visible:before {
+  color: #0a9fda;
+}
+
+.folder-visible {
+  margin-top: 12px;
+}

@@ -1,0 +1,245 @@
+
+.link_j6xU_ {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex
+}
+
+.sortToggle_3nVmh {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: capitalize
+}
+
+.discussion_cr2q_ {
+  position: relative;
+  a:focus, a:hover {
+    color: #999;
+    text-decoration: underline;
+  }
+}
+
+.heading_AsD8K {
+  margin: 0 0 20px !important;
+}
+
+// comment note
+
+.thread_1dWPf {
+  margin: 0 0 20px;
+  padding: 7px 0 0 47px;
+  position: relative
+}
+
+.thread_1dWPf:target {
+  -webkit-animation: highlight_2Grvv 2s;
+  animation: highlight_2Grvv 2s
+}
+
+// User's avatar
+.userImage_3lsm5 {
+  position: absolute;
+  left: 0;
+  top: 0
+}
+
+// User's name
+
+.heading_3axGt {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0 0 10px
+}
+
+// bottom's icons
+
+.actions_3oz6g {
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0 0 10px
+}
+
+.action_Hv6P3, .actions_3oz6g {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.action_Hv6P3 {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 20px 10px 0;
+  opacity: .8
+}
+
+.action_Hv6P3:hover {
+  opacity: 1
+}
+
+.action_Hv6P3 svg {
+  margin: 0 5px 0 0
+}
+
+@media (max-width: 768px) {
+  .action_Hv6P3 {
+    margin: 0 10px 10px 0
+  }
+}
+
+.upvote_3Nd3Q {
+  fill: #999
+}
+
+.upvote_3Nd3Q.tech_1LCFn {
+  color: #5898f1
+}
+
+.upvote_3Nd3Q.games_2JCkp {
+  color: #ca65e9
+}
+
+.upvote_3Nd3Q.books_2nGIh {
+  color: #f5a623
+}
+
+.upvote_3Nd3Q.podcasts_2Yewa {
+  color: #4dc667
+}
+
+.upvote_3Nd3Q.tech_1LCFn {
+  fill: #5898f1
+}
+
+.upvote_3Nd3Q.games_2JCkp {
+  fill: #ca65e9
+}
+
+.upvote_3Nd3Q.books_2nGIh {
+  fill: #f5a623
+}
+
+.upvote_3Nd3Q.podcasts_2Yewa {
+  fill: #4dc667
+}
+
+.upvote_3Nd3Q path {
+  fill: inherit
+}
+
+@media (max-width: 768px) {
+  .noVotesLabel_1gl1X, .shareLabel_2yYck {
+    display: none
+  }
+}
+
+.tweet_3a9pw svg {
+  width: 13px;
+  height: 10px;
+  margin: 0 2px 0 0
+}
+
+.tweet_3a9pw path {
+  fill: #999
+}
+
+.tweet_3a9pw:hover {
+  color: #00aced
+}
+
+.tweet_3a9pw:hover path {
+  fill: #00aced
+}
+
+.facebook_1qw8K path {
+  fill: #999
+}
+
+.facebook_1qw8K:hover {
+  color: #3b5998
+}
+
+.facebook_1qw8K:hover path {
+  fill: #3b5998
+}
+
+.timestamp_28Wws {
+  display: none;
+  margin-left: auto
+}
+
+.actions_3oz6g:hover > .timestamp_28Wws {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+
+// body
+
+.body_221xI {
+  margin: 0 0 10px;
+  word-wrap: break-word;
+}
+
+.body_221xI.tech_Oe_Kz a {
+  color: #5898f1
+}
+
+.body_221xI.games_3Rqa3 a {
+  color: #ca65e9
+}
+
+.body_221xI.books_3Xk1x a {
+  color: #f5a623
+}
+
+.body_221xI.podcasts_nhkRj a {
+  color: #4dc667
+}
+
+.body_221xI img {
+  max-height: 1000px
+}
+
+// Input form
+
+.posts-comments-thread-new {
+  margin: 4px;
+}
+
+.document-edit {
+  margin: 0 0 10px;
+}
+
+.input-body {
+  //padding-left: 8px;
+  padding-right: 12px;
+}
+
+// comment item's edit
+.comment-edit, .comment-delete {
+  font-size: $small-font;
+}
+
+.comment-delete {
+  margin-left: 8px;
+}
+
+.icon_2W98y {
+  margin: 0 5px 0 0
+}
+
+.body_221xI {
+  p {
+    margin-bottom: 4px;
+  }
+}

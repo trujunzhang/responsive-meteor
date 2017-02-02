@@ -1,0 +1,9 @@
+* issues
+
+** Issue #22: Also, description should be in a text box. Doesnt look editable right now. 
+
+** TODO Issue #21: When you're on the home page and you click on politicl (which is supposed to take you to the home page), nothing happens. There should be a quick loader/some animation to show you've refreshed.
+
+   [12/23/16, 6:25:35 PM] Sid Karwal: Can you make a 1 second refresh-delay loader? When a person is on the homepage and wants to refresh the articles, he clicks on the top logo and the page refreshes the articles.
+   [12/23/16, 6:26:20 PM] Sid Karwal: When I am on the homepage “scruby.site”, and I click “Politicl logo”, the articles are refreshed. But the user does not know the articles have been refreshed.
+

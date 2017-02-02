@@ -1,0 +1,163 @@
+.posts-comments-thread {
+  border-top: $border;
+  margin-top: $vmargin;
+  padding-top: $vmargin;
+}
+
+.posts-comments-thread-title {
+  margin-bottom: $vmargin;
+}
+
+.comments-list {
+  margin-bottom: $vmargin;
+}
+
+.comments-node .comments-node, .comments-item-reply {
+  border-left: 10px $lightest-border solid;
+  padding-left: $hmargin;
+}
+
+.comments-item {
+  margin-bottom: $vmargin;
+}
+
+.comments-item-body {
+  @include border-radius;
+  // max-width: 800px;
+  border: $border;
+  padding: $hmargin $vmargin;
+}
+
+.comments-item-meta {
+  @include flex-center;
+  margin-bottom: $vmargin;
+  .users-avatar {
+    margin-right: 5px;
+  }
+  .users-name {
+    margin-right: $hmargin;
+  }
+  .comments-item-date {
+    margin-right: $hmargin;
+    color: $medium-text;
+    font-size: $small-font;
+  }
+  .comment-edit, .comment-delete {
+    font-size: $small-font;
+  }
+  .comment-delete {
+    margin-left: 8px;
+  }
+}
+
+.comments-item-text {
+}
+
+.comments-edit-form, .comments-new-form {
+  .input-body {
+    margin-bottom: $hmargin;
+  }
+  .form-cancel {
+    display: inline-block;
+    margin-left: $hmargin;
+  }
+}
+
+.comments-item-reply {
+  margin-top: $vmargin;
+}
+
+.comment-actions {
+  @include flex-center;
+  button {
+    margin-right: $hmargin;
+  }
+  a {
+    display: block;
+  }
+}
+
+// comments form
+.form_1KXqk {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column;
+  margin: 0 0 25px
+}
+
+.newForm_1CM9h {
+  padding: 15px;
+}
+
+.row_kN1zc {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+
+.actions_3Bypq {
+  margin: 10px 0 0
+}
+
+.userImage_1vOVg {
+  margin: 0 15px 0 0
+}
+
+.input_2rQLy {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #f2f2f2;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 7px 10px;
+  resize: vertical
+}
+
+.input_2rQLy:focus {
+  border-color: #999;
+  outline: 0
+}
+
+.comment-input {
+  overflow: hidden;
+  word-wrap: break-word;
+  resize: none;
+  min-height: 18px;
+}
+
+.placeholder_33khS {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: transparent;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 484px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.placeholder_33khS img {
+  height: 270px;
+  width: 255px
+}
+
+.comment-cancel {
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+.no-comments-message {
+  margin-bottom: 8px;
+}
+
+.comments_item_user_name_deleted_title {
+  margin-left: 4px;
+  font-size: 12px !important;
+}

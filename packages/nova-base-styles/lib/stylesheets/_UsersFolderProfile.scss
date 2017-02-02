@@ -1,0 +1,367 @@
+.collection-detail {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.collection-detail--header--background-uploader {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end
+}
+
+.collection-detail--header--background-uploader path {
+  fill: #b5b5b5
+}
+
+.collection-detail--header--background-uploader svg:hover path {
+  fill: white
+}
+
+.collection-detail--header--background-uploader input {
+  display: none
+}
+
+.collection-detail--header--background-uploader--delete {
+  margin-right: 15px
+}
+
+.collection-detail--header--background-uploader--delete svg {
+  width: 11px;
+  height: 15px
+}
+
+.collection-detail--header--background-uploader--upload svg {
+  width: 21px;
+  height: 20px
+}
+
+.collection-detail--header--delete-button {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  color: white;
+  line-height: 17px;
+  margin-top: 30px;
+  cursor: pointer
+}
+
+.collection-detail--header--delete-button svg {
+  margin-right: 5px
+}
+
+.collection-detail--header--delete-button:hover {
+  text-decoration: underline
+}
+
+.collection-detail--follow-count {
+  margin-left: 15px;
+  color: #bbb;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+.collection-detail--header {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  color: white;
+  height: 264px;
+  min-height: 220px;
+  position: relative
+}
+
+.collection-detail--header .collection-detail--header--background-uploader--delete, .collection-detail--header .collection-detail--header--delete-button, .collection-detail--header .collection-detail--header--heading svg, .collection-detail--header .collection-detail--header--background-uploader--upload {
+  visibility: hidden
+}
+
+.collection-detail--header:hover .collection-detail--header--background-uploader--delete, .collection-detail--header:hover .collection-detail--header--delete-button, .collection-detail--header:hover .collection-detail--header--heading svg, .collection-detail--header:hover .collection-detail--header--background-uploader--upload {
+  visibility: visible
+}
+
+.collection-detail--header--heading {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-flow: column nowrap;
+  -moz-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center;
+  margin: 20px;
+  text-align: center
+}
+
+.collection-detail--header--heading h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 68px;
+  margin: 0
+}
+
+@media (max-width: 768px) {
+  .collection-detail--header--heading h1 {
+    font-size: 30px
+  }
+}
+
+.collection-detail--header--heading h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0
+}
+
+.collection-detail--header--heading h1 svg, .collection-detail--header--heading h2 svg {
+  cursor: pointer
+}
+
+.collection-detail--header--heading h1 svg path, .collection-detail--header--heading h2 svg path {
+  fill: #b5b5b5
+}
+
+.collection-detail--header--heading h1 svg:hover path, .collection-detail--header--heading h2 svg:hover path {
+  fill: white
+}
+
+.collection-detail--header--heading h1 input, .collection-detail--header--heading h2 input {
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+  border: 0;
+  border-bottom: 1px dashed #b5b5b5;
+  display: inline-block;
+  min-width: 600px
+}
+
+.collection-detail--header--heading .collection-detail--header--curator {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  margin-top: 30px
+}
+
+.collection-detail--header--heading .collection-detail--header--curator .user-image {
+  margin-right: 10px
+}
+
+.collection-detail--header--heading .collection-detail--header--curator a {
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.collection-detail--header--heading .collection-detail--header--curator a:hover {
+  text-decoration: underline
+}
+
+.collection-detail--subnav {
+  background-color: #faf9f9;
+  border-bottom: 1px solid #f2f2f2;
+  height: 69px
+}
+
+.collection-detail--subnav--container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  height: 69px;
+  max-width: 960px;
+  margin: 0 auto
+}
+
+.collection-detail--action-buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  height: 69px;
+  max-width: 960px
+}
+
+.collection-detail--backlink {
+  display: block
+}
+
+.collection-detail--backlink:hover {
+  text-decoration: underline
+}
+
+.collection-detail--backlink {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-eistart;
+  -moz-align-self: flex-eistart;
+  align-self: flex-eistart;
+  -ms-flex-item-align: flex-eistart;
+  float: right;
+  margin-right: auto
+}
+
+.collection-detail--backlink svg {
+  margin-right: 5px
+}
+
+// Edit button in the header section
+.editable-text--button {
+  margin-left: 6px;
+}

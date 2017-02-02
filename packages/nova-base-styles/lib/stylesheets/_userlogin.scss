@@ -1,0 +1,723 @@
+
+.login-fullscreen {
+  background: url("/packages/public/images/politicl-logo.png") top center/200px 64px no-repeat;
+  padding: 90px 10px 50px;
+  text-align: center
+}
+
+.login-fullscreen.v-category-books {
+  background-image: url("https://s3.producthunt.com/static/category-books/kitty.png")
+}
+
+.login-fullscreen.v-category-games {
+  background-image: url("https://s3.producthunt.com/static/category-games/kitty.png")
+}
+
+.login-fullscreen.v-category-podcasts {
+  background-image: url("https://s3.producthunt.com/static/category-podcasts/kitty.png");
+  background-size: 150px auto;
+  padding-top: 180px
+}
+
+.login-fullscreen--title {
+  font-size: 22px;
+  font-weight: 600
+}
+
+.login-fullscreen--intro, .login-fullscreen--facebook-failed {
+  color: #444;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 500px
+}
+
+.login-fullscreen--intro {
+  padding-bottom: 20px
+}
+
+.login-fullscreen--login-info {
+  color: #999;
+  padding-top: 10px
+}
+
+.login-fullscreen--users {
+  list-style: none;
+  margin: 0 auto 28px;
+  padding: 0
+}
+
+.login-fullscreen--user {
+  display: inline-block;
+  margin: 0 7px
+}
+
+.signupSolidColor_pdgXp {
+  background: #fff;
+  color: #0a9fda;
+  font-size: 16px;
+}
+
+//Sign in
+
+.overlay {
+  position: fixed;
+  overflow: auto;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: 900;
+  background-color: rgba(255, 255, 255, .97);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0
+}
+
+.overlay--dark {
+  //background-color: rgba(0, 0, 0, .6);
+}
+
+.overlay:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -.25em
+}
+
+.overlay-dialog {
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  overflow: hidden;
+  max-width: 580px;
+  padding: 100px 80px
+}
+
+.overlay-dialog--animate {
+  transform-origin: bottom center;
+  animation: fade-in-pulse-08 .3s forwards cubic-bezier(.8, .02, .45, .91)
+}
+
+.overlay-dialog.overlay-dialog--form {
+  overflow: visible
+}
+
+.overlay-title {
+  color: rgba(0, 0, 0, .8);
+  font-size: 24px;
+  line-height: 1.1;
+  margin-bottom: 6px
+}
+
+.overlay-title--thin {
+  letter-spacing: 0;
+  font-weight: 300;
+  font-style: normal
+}
+
+.overlay-subtitle {
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-style: normal
+}
+
+.overlay-content {
+  color: rgba(0, 0, 0, .6);
+  line-height: 1.4;
+  margin-bottom: 30px
+}
+
+.overlay-actions > .button {
+  margin-bottom: 10px
+}
+
+.overlay-content > a {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, .6)
+}
+
+.overlay-title + .overlay-actions {
+  margin-top: 40px
+}
+
+.overlay-label {
+  font-size: 18px;
+  margin-top: 20px;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-style: normal
+}
+
+.overlay-footer {
+  font-size: 12px;
+  color: rgba(0, 0, 0, .44);
+  margin-top: 50px;
+  margin-bottom: 10px
+}
+
+.overlay--interstitial .overlay-content > p {
+  width: 450px;
+  line-height: 1.4
+}
+
+.overlay--storiesInterstitial .overlay-dialog, .overlay-dialog--update {
+  transform-origin: none;
+  animation: none
+}
+
+.overlay-dialog--alert, .overlay-dialog--confirm, .overlay-dialog--signin {
+  text-align: center
+}
+
+.overlay-dialog--list .overlay-title {
+  margin-bottom: 25px
+}
+
+.overlay-dialog--signin {
+  max-width: 620px
+}
+
+.overlay-dialog--signin .overlay-subtitle {
+  margin-bottom: 0
+}
+
+.overlay-dialog--signin .overlay-content {
+  padding-top: 10px
+}
+
+.overlay-dialog .button--signin {
+  width: 100%;
+  height: 58px;
+  border-radius: 2px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 18px;
+  max-width: 456px
+}
+
+.overlay-dialog--signin .button-label--subText {
+  color: rgba(255, 255, 255, .65);
+  font-size: 12px
+}
+
+.overlay-dialog--email .overlay-content {
+  margin-bottom: 0
+}
+
+.overlay-formContainer {
+  width: 590px
+}
+
+.overlay--collabInterstitial .overlay-dialog {
+  width: 590px
+}
+
+.overlay--collabInterstitial .overlay-title {
+  margin-bottom: 15px
+}
+
+.overlay--collabInterstitial .overlay-animation {
+  display: block;
+  height: 168px;
+  width: 100%
+}
+
+.overlay--collabInterstitial .overlay-actions {
+  text-align: center
+}
+
+.overlay--dark .overlay-dialog {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .44);
+  padding: 0;
+  max-width: 520px
+}
+
+.overlay--dark .overlay-title, .overlay--dark .overlay-title--context {
+  margin-bottom: 0;
+  background-color: #f0f0f0;
+  padding: 24px 24px 24px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, .8)
+}
+
+.overlay--dark .overlay-actions {
+  margin-bottom: 32px
+}
+
+.overlay--dark .overlay-title--context {
+  padding: 10px
+}
+
+.overlay--dark .button--close {
+  color: #fff
+}
+
+.overlay--dark .overlay-content {
+  padding: 0 32px 0;
+  margin: 18px 0;
+  font-size: 16px;
+  text-align: left;
+  color: rgba(0, 0, 0, .6)
+}
+
+.overlay--dark .overlay-dialog--wait {
+  padding: 0
+}
+
+.overlay--dark .overlay-footer {
+  margin: 0 0 16px
+}
+
+.overlay--dark .overlay-dialog--wait .overlay-content {
+  margin: 0;
+  padding-top: 32px;
+  color: rgba(0, 0, 0, .8);
+  font-size: 18px
+}
+
+.overlay--dark .overlay-dialog--email .button--link {
+  margin-top: -24px
+}
+
+.overlay--import {
+  font-size: 18px
+}
+
+.overlay--import > .overlay-title {
+  font-size: 44px;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-style: normal
+}
+
+.overlay--import > .overlay-content {
+  margin: 30px -100px;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-style: normal
+}
+
+.overlay-item {
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  width: 26%
+}
+
+.overlay-itemHeader {
+  color: #00ab6b;
+  font-size: 32px;
+  margin-bottom: 10px
+}
+
+.overlay-itemText {
+  font-size: 18px;
+  min-height: 60px;
+  margin-bottom: 10px
+}
+
+.overlay-itemImage {
+  height: 166px
+}
+
+.overlayRegistration {
+  max-width: 400px
+}
+
+.overlayRegistration .textInput {
+  width: 100%;
+  margin-bottom: 10px
+}
+
+.overlayRegistration-followTwitter, .overlayRegistration-likeFacebook, .overlayRegistration-shadowMessage, .overlayRegistration-terms {
+  font-size: 14px;
+  text-align: left;
+  margin: 10px 0 0
+}
+
+.overlayRegistration-terms {
+  margin-top: 25px
+}
+
+.overlayRegistration-terms > a {
+  text-decoration: underline
+}
+
+.overlayRegistration-shadowMessage .shadowMessage-title {
+  font-weight: 700
+}
+
+.overlayRegistration-checkbox {
+  vertical-align: 1px;
+  margin-right: 4px
+}
+
+.overlay-signin--waiting {
+  max-width: 300px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, .44);
+  margin: 0 auto
+}
+
+.overlay--dark .overlay-dialog--signin .signinPrivacyMessages {
+  text-align: left;
+  margin: 0 32px 20px
+}
+
+.signinPrivacyMessages .link {
+  text-decoration: underline
+}
+
+.overlay-embed {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eee #ddd #bbb;
+  position: relative;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, .15) 0 1px 3px
+}
+
+.tweetEditor-avatar {
+  float: left;
+  padding: 2px 0;
+  margin-right: 14px
+}
+
+.tweetEditor-tweetContainer {
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 5px;
+  padding: 14px 20px;
+  overflow: hidden
+}
+
+.tweetEditor-error {
+  font-size: 14px;
+  cursor: default
+}
+
+.tweetEditor-textContainer {
+  display: block;
+  font-size: 16px;
+  color: rgba(0, 0, 0, .8)
+}
+
+.tweetEditor-textContainer .inlineError--maxLength::after {
+  font-size: 14px;
+  margin-top: 2px
+}
+
+.tweetEditor-textshot {
+  text-align: left;
+  margin-top: 16px
+}
+
+.tweetEditor-imageContainer {
+  display: inline-block;
+  position: relative
+}
+
+.tweetEditor-imageStatus {
+  color: rgba(0, 0, 0, .44);
+  font-size: 14px
+}
+
+.tweetEditor-imageStatusIcon {
+  margin-right: 5px;
+  font-size: 18px
+}
+
+.tweetEditor-image {
+  height: 220px;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: height .1s
+}
+
+.tweetEditor-image.tweetEditor-image--expanded {
+  height: 340px;
+  cursor: zoom-out
+}
+
+.tweetEditor-removeTextshot {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  background: #b3b3b1;
+  border-color: #b3b3b1;
+  color: #fff
+}
+
+.tweetEditor-removeTextshot:active, .tweetEditor-removeTextshot:focus, .tweetEditor-removeTextshot:hover {
+  background: rgba(0, 0, 0, .8);
+  border-color: rgba(0, 0, 0, .8);
+  color: #fff
+}
+
+@media screen and (max-width: 991px) {
+  .overlay-keyboardDef {
+    float: none;
+    width: auto
+  }
+}
+
+@media screen and (max-width: 767px) and (max-height: 500px) {
+  .overlay-dialog {
+    width: 80%;
+    padding: 30px 0
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overlay-dialog {
+    width: 80%;
+    padding: 0
+  }
+  .overlay-title {
+    font-size: 24px;
+    padding-top: 35px
+  }
+  .overlay-content {
+    font-size: 16px
+  }
+  .overlay--collabInterstitial .overlay-animation {
+    height: 84px
+  }
+  .overlay--interstitial .overlay-content > p {
+    width: 100%
+  }
+  .overlay-formContainer {
+    width: auto
+  }
+  .overlay--dark {
+    padding: 10px 0
+  }
+  .overlay--dark .overlay-dialog {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    vertical-align: top;
+    max-width: 100%
+  }
+  .overlay--dark .overlay-actions {
+    margin-bottom: 16px
+  }
+  .overlay--dark .overlay-title {
+    padding-left: 16px;
+    padding-right: 16px
+  }
+  .overlay--dark .overlay-content {
+    //padding: 0 16px
+  }
+  .overlay--dark .button--signin {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%
+  }
+  .overlay--dark .button--close {
+    z-index: 200;
+    color: rgba(0, 0, 0, .44);
+    right: 5px
+  }
+  .overlay--dark::before {
+    margin-right: 0
+  }
+  .overlay--dark .overlay-dialog--signin .signinPrivacyMessages {
+    margin: 0 16px
+  }
+  .overlay--dark .overlay-dialog--signin .buttonSet--vertical {
+    margin: 0 16px
+  }
+}
+
+// Or via twitter facebook
+#user-sigin {
+  .button--chromeless, .button--link {
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    line-height: inherit;
+    border-width: 0;
+    padding: 0;
+    vertical-align: baseline;
+    color: rgba(0, 0, 0, .44);
+    white-space: normal;
+    text-align: left;
+  }
+}
+
+.textInput--large {
+  font-size: 18px;
+  height: 40px;
+  margin: 10px auto;
+  overflow: hidden;
+  padding: 7px;
+  width: 500px;
+  white-space: nowrap;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-style: normal
+}
+
+.textInput--signin {
+  width: 100%
+}
+
+// Login/ register button
+#user-submit-button-panel {
+  margin-right: 28px;
+}
+
+//
+
+#button-set-panel {
+  padding-left: 34px;
+  padding-right: 34px;
+
+  .button--email, .button--email:active, .button--email:focus, .button--email:hover {
+    border: 1px solid #02b875;
+    color: #00ab6b
+  }
+
+  .button--email .svgIcon, .button--email:active .svgIcon, .button--email:focus .svgIcon, .button--email:hover .svgIcon {
+    fill: #02b875;
+  }
+
+  .button--signin .svgIcon--25px {
+    padding-right: 8px !important;
+  }
+
+  .button--signin {
+    width: 100%;
+    height: 58px !important;
+    border-radius: 2px !important;
+    font-size: 16px !important;
+    text-align: left !important;
+    padding-left: 18px !important;
+    max-width: 456px !important;
+    background-color: white;
+  }
+
+  .svgIcon-use {
+    vertical-align: middle;
+    margin-bottom: 4px;
+  }
+
+}
+
+#passwordless-result, #passwordless-form {
+  border-radius: 3px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .44);
+  padding: 0;
+  max-width: 520px;
+
+  .overlay-title {
+    margin-bottom: 0;
+    background-color: #f0f0f0;
+    padding: 24px 24px 24px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, .8)
+  }
+
+  .overlay-content {
+    padding: 0 32px 0;
+    margin: 24px 0;
+    font-size: 16px;
+    text-align: left;
+    color: rgba(0, 0, 0, .6);
+  }
+
+  .overlay-actions {
+    margin-bottom: 32px;
+  }
+
+  .button {
+    display: inline-block;
+    position: relative;
+    height: 37px;
+    padding: 0 16px;
+    color: rgba(0, 0, 0, .44);
+    background: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #00ab6b;
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-rendering: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    border-radius: 0em;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on
+  }
+
+  .button:active {
+    outline: 0
+  }
+
+  .button {
+    line-height: 35px
+  }
+
+  .button:hover {
+    color: rgba(0, 0, 0, .6);
+    border-color: rgba(0, 0, 0, .44)
+  }
+
+  .button:active, .button:focus {
+    outline: 0;
+    color: rgba(0, 0, 0, .8);
+    border-color: rgba(0, 0, 0, .6)
+  }
+
+  .overlay-footer {
+    margin: 0 0 16px;
+  }
+
+}
+
+#passwordless-result.button {
+  border-radius: 999em;
+}
+
+#login-via-main {
+  border: 0px solid #fff !important;
+}
+
+#sign-up-button {
+  border-radius: 12px !important;
+}
+
+#user-signin-panel {
+  .textInput--underlined {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 0
+  }
+}

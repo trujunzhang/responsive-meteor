@@ -1,0 +1,193 @@
+// @import '{}/node_modules/bootstrap/scss/bootstrap.scss';
+//https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat|Open+Sans
+//@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+html {
+  font-family: 'proxima-nova', 'Proxima Nova', sans-serif
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  position: relative
+}
+
+@media (min-width: 769px) {
+  body {
+    background: #f9f9f9;
+  }
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  width: 100%
+}
+
+body.white-background {
+  background: white
+}
+
+body.api-v1-oauth-applications-index, body.api-v1-docs-index {
+  background: white
+}
+
+body.categories-posts-show {
+  display: flex;
+  flex-flow: column nowrap
+}
+
+body.categories-posts-show #unrouted-app-header + .page-main {
+  flex: 1
+}
+
+//*, *::before, *::after {
+//  -webkit-box-sizing: inherit;
+//  box-sizing: content-box;
+//}
+
+a {
+  cursor: pointer;
+  color: #0a9fda;
+  transition: color ease-out 300ms;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.input:focus, .textarea:focus, .select:focus {
+  //box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+  outline: 0;
+}
+
+.input, .textarea, .select {
+  border: 0;
+  border-radius: 3px;
+  //box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.11), inset 0 0 0 1px rgba(0, 0, 0, 0.13);
+  color: black;
+  padding: 7px 12px;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import "normalize";
+@import "breakpoints";
+@import "colors";
+@import "variables";
+@import "spinner";
+@import "global";
+
+@import "font";
+
+@import "producthunt";
+@import "application";
+
+@import "accounts";
+@import "categories";
+@import "cheatsheet";
+@import "comments";
+@import "postcomment";
+
+@import "header";
+@import "medium_header";
+
+@import "newsletter";
+@import "forms";
+@import "home";
+@import "posts";
+
+@import "postspopup";
+@import "postssingleheader";
+@import "postdetail";
+@import "postdetailaside";
+
+@import "users";
+@import "userlogin";
+@import "userprofileheader";
+@import "userprofile";
+
+@import "digitalocean";
+
+@import "widgetcalendar";
+@import "widgettopics";
+
+@import "popover";
+@import "usercollections";
+
+@import "foldersitem";
+@import "UsersFolderProfile";
+
+@import "widget";
+@import "widgetappfooter";
+
+@import "messages";
+@import "notifications";
+
+@import "submitanarticle";
+@import "articlecategories";
+
+@import "admin-all-skins";
+@import 'AdminLTE';
+@import "appadmin";
+@import "wordpresssidebar";
+@import "wordpresseditform";
+@import "adminheader";
+
+@import "reactselect/default";
+
+@import "message";
+
+.new-post-button {
+  margin-bottom: 15px;
+}
+
+//code {
+//  font-family: monospace;
+//  background: #fafafa;
+//  border: 1px solid #ddd;
+//  padding: 3px 6px;
+//}
+
+.sr-only {
+  display: none;
+}
+
+.upvoted .upvote {
+  opacity: 0.3;
+}
+
+.posts-day h2 {
+  font-weight: bold;
+}
+
+.headline_3NiTB {
+  margin-bottom: 30px
+}
+
+@keyframes shimmy-shake {
+  0% {
+    transform: translateX(-1%)
+  }
+
+  20% {
+    transform: translateX(1%)
+  }
+
+  40% {
+    transform: translateX(-1%)
+  }
+
+  60% {
+    transform: translateX(1%)
+  }
+
+  80% {
+    transform: translateX(-1%)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
